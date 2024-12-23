@@ -53,8 +53,6 @@ class MainActivity : AppCompatActivity() {
 
             model = CourseModal(id,courseName, courseDescription, courseDuration).apply { id = id }
             viewModel.update(model)
-            Log.d("checkid", model.id.toString())
-            Log.d("checkid", viewModel.toString())
             Toast.makeText(this, "Course updated", Toast.LENGTH_SHORT).show()
         }
     }
