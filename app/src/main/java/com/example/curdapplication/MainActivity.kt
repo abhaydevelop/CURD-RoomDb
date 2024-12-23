@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
             val courseName = data!!.getStringExtra(NewCourseActivity.EXTRA_COURSE_NAME) ?: ""
             val courseDescription = data.getStringExtra(NewCourseActivity.EXTRA_DESCRIPTION) ?: ""
             val courseDuration = data.getStringExtra(NewCourseActivity.EXTRA_DURATION) ?: ""
-            Log.d("checkid", id.toString())
 
             model = CourseModal(id,courseName, courseDescription, courseDuration).apply { id = id }
             viewModel.update(model)
